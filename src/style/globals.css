@@ -26,7 +26,8 @@ body {
     box-sizing: border-box;
 }
 
-.main-container {
+/*メインコンテナ*/
+.main-container { 
     width: 1440px;
     height: 6748px;
     background: #F8F8F8;
