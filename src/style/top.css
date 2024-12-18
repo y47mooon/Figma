@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+.top-container {
+    width: 1440px;
+    height: 778px;
+    flex-shrink: 0;
+    opacity: 1;
+    background: linear-gradient(238deg, #fcdbdb 0%, rgba(230, 70, 70, 0.00) 46.48%);
+    margin: 0 auto; /* 中央寄せ */
+    position: relative; /* 子要素の絶対位置指定のため */
+}
+
+.logo-top {
+    position: absolute;
+    top: 44px;
+    left: 62px;
+    width: 140px;
+    height: 28px;
+    flex-shrink: 0;
+    z-index: 1000;
+}
+
+.custom-logo {
+    position: absolute;  /* 絶対位置指定 */
+    top: 1px;            /* main-containerの最上辺から1px */
+    left: 1133.6px;        /* 左辺から1163px */
+    width: 306.404px;    /* 幅 */
+    height: 717.793px;   /* 高さ */
+    flex-shrink: 0;
+    z-index: 100;       /* 他の要素の上に表示 */
+}
+.creative-group {
+    position: absolute;
+    top: 303px;
+    left: 813px;
+    width: 613.551px;
+    height: 976.316px;
+    flex-shrink: 0;
+    z-index: 1000;
+}
+
+.text-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.creative-text {
+    position: relative;
+    font-family: 'Jura', sans-serif;
+    font-size: 66.947px;
+    font-weight: 700;
+    font-style: normal; 
+    line-height: 79px;
+    letter-spacing: -1.339px;
+    z-index: 2;
+    color: #E64646; /* 文字自体の色 */
+    -webkit-text-stroke: 1px #E85959; /* 縁取りの色と太さ */
+    background-size: cover;
+    background-position: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    mix-blend-mode: multiply; /* 画像と文字色を合成 */
+}
+
+.new-class {
+    width: 577px;
+    height: 1128px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 70px;
+    right: 793px;
+}
+
+.left-container {
+    width: 685.428px;
+    height: 1229px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 80px;
+    top: 119px;
+    z-index: 10;
+    background: url('../../public/image/left.png') lightgray 50% / cover no-repeat;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    clip-path: path('M0 15 C1 3.716 7.716 3 23 0 L30 0 Q45 0 51 16 L665 1229 L0 1229 Z');
+}
+
+.new-right-container {
+    width: 406.737px;
+    height: 765.771px;
+    flex-shrink: 0;
+    background: url('../../public/image/right.png') lightgray 50% / cover no-repeat;
+    position: absolute;
+    top: 119px; 
+    left: 255.75px; 
+    z-index: 500;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 20px;
+    clip-path: path('M30 0 C20 0 0 10 0 53 L364.537 735.731 C376.737 765.76 406.737 765.771 406.737 765.771 L406.736 0 L40 0');
+}
+
+.creative-ai {
+    position: absolute; /* 位置を絶対指定 */
+    top: 563px; /* 上辺の位置 */
+    left: 818px; /* 左辺の位置 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP", sans-serif; /* フォントファミリーを指定 */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4.32px;
+    z-index: 100;
+}
+
+.custom-position {
+    width: 1440px;
+    height: 190px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(7px);
+    position: absolute; /* 位置を絶対指定 */
+    top: 778px; /* main-containerの最上部から778pxの位置 */
+    left: 0; /* 左端に配置 */
+    z-index: 700; /* 他の要素の上に表示 */
+}
+
+.description-text {
+    width: 664px;
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+    position: absolute; /* 位置を絶対指定 */
+    top: 828px; /* main-containerの最上辺から828pxの位置 */
+    left: 40px; /* 左辺から40pxの位置 */
+    z-index: 800; /* 他の要素の上に表示 */
+}
+
+.service-container {
+    width: 1440px;
+    height: 747px;
+    flex-shrink: 0;
+    background: #F1EAEA;
+    position: absolute; /* 位置を絶対指定 */
+    top: 968px; /* メインコンテナの最上辺から968pxの位置 */
+    left: 0; /* 左端に配置 */
+    z-index: 800; /* 他の要素の上に表示 */
+}
+
+.service-title {
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6.4px;
+    position: absolute; /* 位置を絶対指定 */
+    top: 58px; /* サービスコンテナ内の上辺から58pxの位置 */
+    left: 80px; /* サービスコンテナ内の左辺から80pxの位置 */
+}

@@ -1,0 +1,23 @@
+.service-container {
+    width: 1440px;
+    height: 747px;
+    flex-shrink: 0;
+    background: #F1EAEA;
+    position: absolute; /* 位置を絶対指定 */
+    top: 968px; /* メインコンテナの最上辺から968pxの位置 */
+    left: 0; /* 左端に配置 */
+    z-index: 800; /* 他の要素の上に表示 */
+}
+
+.service-title {
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6.4px;
+    position: absolute; /* 位置を絶対指定 */
+    top: 58px; /* サービスコンテナ内の上辺から58pxの位置 */
+    left: 80px; /* サービスコンテナ内の左辺から80pxの位置 */
+} 
