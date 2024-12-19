@@ -3,7 +3,7 @@
     height: 747px;
     flex-shrink: 0;
     background: #F1EAEA;
-    position: absolute; /* 位置を絶対指定 */
+    position:absolute; /* 位置を絶対指定 */
     top: 968px; /* メインコンテナの最上辺から968pxの位置 */
     left: 0; /* 左端に配置 */
     z-index: 800; /* 他の要素の上に表示 */
@@ -21,3 +21,160 @@
     top: 58px; /* サービスコンテナ内の上辺から58pxの位置 */
     left: 80px; /* サービスコンテナ内の左辺から80pxの位置 */
 } 
+.service-title-rotated {
+    color: #1F1F1F;
+    font-family: "Jura";
+    font-size: 60px; /* フォントサイズを60pxに変更 */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.1; /* 不透明度を0.1に変更 */
+    transform: rotate(-90deg); /* 90度回転 */
+    position: absolute; /* 位置を絶対指定 */
+    top: 259px; 
+    left: 53px; /* 左辺から53pxの位置 */
+    white-space: nowrap;
+}
+
+.service-icon {
+    position: absolute;
+    top: 1202px; /* メインコンテナの最上辺1202 */
+    left: 868px; /* 左辺868 */
+    width: 155px; /* 幅 */
+    height: 279px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #FFA4A4; /* 塗りつぶし色 */
+    z-index: 900;
+}
+
+.service-icon-offset {
+    position: absolute;
+    top: 1202px; /* メインコンテナの最上辺1202 */
+    left: 615px; /* 左辺615 */
+    width: 155px; /* 幅 */
+    height: 279px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #FFA4A4; /* 塗りつぶし色 */
+    z-index: 900;
+}
+
+.service-icon-left {
+    position: absolute;
+    top: 1202px; /* メインコンテナの最上辺1202 */
+    left: 347px; /* 左辺347に移動 */
+    width: 155px; /* 幅 */
+    height: 279px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #FFA4A4; /* 塗りつぶし色 */
+    z-index: 900;
+}
+.stadia-controller-icon {
+    position: absolute;
+    top: 1226px; /* メインコンテナの最上辺1226 */
+    left: 892px; /* 左辺892 */
+    width: 63px; /* 幅 */
+    height: 63px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    z-index: 950;
+}
+
+.sync-desktop-icon {
+    position: absolute;
+    top: 1226px; /* メインコンテナの最上辺1226 */
+    left: 639px; /* 左辺639 */
+    width: 63px; /* 幅 */
+    height: 63px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    z-index: 950; /* 他のアイコンよりも上に表示 */
+}
+
+.memory-icon {
+    position: absolute;
+    top: 1226px;
+    left: 371px;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    z-index: 900;
+}
+
+.entertainment-text {
+    position: absolute;
+    top: 330px; 
+    left: 892px; /* 左辺892 */
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 40px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    z-index:950;
+}
+
+.automation-text {
+    position: absolute;
+    top: 330px;
+    left: 639px;
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.service-image {
+    width: 398.658px;
+    height: 529.939px;
+    flex-shrink: 0;
+    position: absolute; /* 位置を絶対に設定 */
+    top: 800px; /* 最上辺の位置 */
+    left: 1046.54px; /* 左辺の位置 */
+}
+.service-image-new { /* クラス名を変更 */
+    width: 398.658px;
+    height: 529.939px;
+    flex-shrink: 0;
+    position: absolute; /* 位置を絶対に設定 */
+    top: 778px; /* サービスコンテナの最上辺から778pxの位置 */
+    right: 1092.34px; /* サービスコンテナの右辺から1092.34pxの位置 */
+}
+
+.service-svg-container {
+    position: absolute;;
+    z-index: 900; /* service-box より下に表示 */
+    top: 889px; /* サービスコンテナの最上辺から889pxの位置 */
+    right: 220px; /* サービスコンテナの左辺から220pxの位置 */
+    width: 1000px; /* 幅 */
+    height: 240px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #E64646; /* 塗りつぶし色 */
+    filter: drop-shadow(0px 4px 12px rgba(230, 70, 70, 0.24)); /* ドロップシャドウ */
+}
+.new-icon {
+    width: 32px; /* 幅 */
+    height: 32px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    background: #E64646; /* 背景色 */
+    box-shadow: 0px 4px 12px 0px rgba(230, 70, 70, 0.16); /* ボックスシャドウ */
+    position: absolute; /* 位置を絶対に設定 */
+    top: 1097px; /* サービスコンテナの最上辺から1097pxの位置 */
+    left: 1188px; /* サービスコンテナの右辺から220pxの位置に変更 */
+}
+
+.service-box {
+    position: absolute; /* 絶対位置を指定 */
+    z-index: 1000; /* service-svg-container より上に表示 */
+    top: 584px; /* 上辺からの位置 */
+    left: 294.92px; /* 左辺からの位置 */
+    width: 849.134px;
+    height: 850px;
+    flex-shrink: 0;
+    border-radius: 850px;
+    border: 1px solid #FFF;
+    opacity: 0.2;
+    background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%);
+    clip-path: inset(0 0 0 0); /* はみ出た部分を隠す */
+}

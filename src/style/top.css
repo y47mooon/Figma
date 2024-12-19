@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 .top-container {
     width: 1440px;
@@ -141,31 +141,183 @@
     font-weight: 400;
     line-height: 32px; /* 200% */
     position: absolute; /* 位置を絶対指定 */
-    top: 828px; /* main-containerの最上辺から828pxの位置 */
+    top: 828px; /* main-containerの最��辺から828pxの位置 */
     left: 40px; /* 左辺から40pxの位置 */
     z-index: 800; /* 他の要素の上に表示 */
 }
 
-.service-container {
-    width: 1440px;
-    height: 747px;
-    flex-shrink: 0;
-    background: #F1EAEA;
-    position: absolute; /* 位置を絶対指定 */
-    top: 968px; /* メインコンテナの最上辺から968pxの位置 */
-    left: 0; /* 左端に配置 */
-    z-index: 800; /* 他の要素の上に表示 */
-}
-
-.service-title {
+.top-text {
+    position: absolute;
+    top: 39px; /* メインコンテナの最上辺39 */
+    left: 950px; /* 左辺950 */
     color: #1F1F1F;
     font-family: "Noto Sans JP";
-    font-size: 32px;
+    font-size: 13px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
-    letter-spacing: 6.4px;
-    position: absolute; /* 位置を絶対指定 */
-    top: 58px; /* サービスコンテナ内の上辺から58pxの位置 */
-    left: 80px; /* サービスコンテナ内の左辺から80pxの位置 */
+}
+
+.service-text {
+    position: absolute;
+    top: 39px; /* メインコンテナの最上辺39 */
+    left: 1032px; /* 左辺1032 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.flow-text {
+    position: absolute;
+    top: 39px; /* メインコンテナの最上辺39 */
+    left: 1136px; /* 左辺1136 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.works-text {
+    position: absolute;
+    top: 39.5px; /* メインコンテナの最上辺39.5 */
+    left: 1233px; /* 左辺1233 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contact-text {
+    position: absolute;
+    top: 40px; /* メインコ���テナの最上辺40 */
+    left: 1322px; /* 左辺1322 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.top-button-text {
+    position: absolute;
+    top: 64px; /* メインコンテナの最上辺64 */
+    left: 938px; /* 左辺938 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400; /* フォントウェイトを400に変更 */
+    line-height: normal;
+}
+
+.service-button-text {
+    position: absolute;
+    top: 64px; /* メインコンテナの最上辺64 */
+    left: 1030px; /* 左辺1030 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400; /* フォントウェイトは400 */
+    line-height: normal;
+}
+
+.development-flow-text {
+    position: absolute;
+    top: 64px; /* メインコンテナの最上辺64 */
+    left: 1122px; /* 左辺1122 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400; /* フォントウェイトは400 */
+    line-height: normal;
+    white-space: nowrap; /* テキストを横に表示 */
+}
+.case-study-text {
+    position: absolute;
+    top: 63.5px; /* メインコンテナの最上辺63.5 */
+    left: 1227px; /* 左辺1227 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400; /* フォントウェイトは400 */
+    line-height: normal;
+    white-space: nowrap; /* テキストを横に表示 */
+}
+.inquiry-text {
+    position: absolute;
+    top: 64px; /* メインコンテナの最上辺64 */
+    left: 1309px; /* 左辺1309 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400; /* フォントウェイトは400 */
+    line-height: normal;
+    white-space: nowrap; /* テキストを横に表示 */
+}
+.vector-icon {
+    position: absolute;
+    top: 46px; /* メインコンテナの最上辺46 */
+    left: 1311px; /* 左辺1311 */
+    width: 9.095px; /* 幅 */
+    height: 17.138px; /* 高さ */
+    transform: rotate(0deg); /* 向きを修正 */
+    fill: #E64646; /* 塗りつぶし色 */
+    flex-shrink: 0; /* 縮小しない */
+}
+.vector-icon-2 {
+    position: absolute;
+    top: 38px; /* メインコンテナの最上辺38 */
+    left: 1373px; /* 左辺1373 */
+    width: 9.095px; /* 幅 */
+    height: 17.138px; /* 高さ */
+    transform: rotate(-6.841deg); /* 回転 */
+    fill: #E64646; /* 塗りつぶし色 */
+    flex-shrink: 0; /* 縮小しない */
+}
+.red-square {
+    position: absolute;
+    top: 857px; /* メインコンテナの最上辺857 */
+    left: 1176px; /* 左辺1176 */
+    width: 32px; /* 幅 */
+    height: 32px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    background: #E64646; /* 背景色 */
+    box-shadow: 0px 4px 12px 0px rgba(230, 70, 70, 0.16); /* ボックスシャドウ */
+    z-index: 1000;
+}
+.white-line-icon {
+    position: absolute;
+    top: 867px; /* メインコンテナの最上辺867 */
+    left: 1189px; /* 左辺1189 */
+    width: 6px; /* 幅 */
+    height: 12px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    stroke-width: 1px; /* ストロークの幅 */
+    stroke: #FFF; /* ストロークの色 */
+    z-index: 1100;
+}
+.realice-text {
+    position: absolute;
+    top: 863px; /* メインコンテナの最上辺863 */
+    left: 1224px; /* 左辺1224 */
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 14px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 700; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    white-space: nowrap; /* テキストを横に表示 */
+    z-index:1200;
 }
