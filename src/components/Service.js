@@ -98,10 +98,85 @@ const Service = () => {
 
   return (
     <div className="service-container">
-        <div className="service-box"></div>
-        <img className="service-image-new" src="/image/Group 334.png" alt="Service" /> 
-        <img className="service-image" src="/image/Group 332.png" alt="Service" /> 
-        <div className="service-svg-container">
+      <div className="service-box">
+        <svg width="100%" height="100%">
+          <defs>
+            <radialGradient id="service-gradient">
+              <stop offset="0%" stopColor="#E64646" />
+              <stop offset="90%" stopColor="#E64646" />
+              <stop offset="100%" stopColor="#EDBBBB" />
+            </radialGradient>
+            <filter id="edge-blur" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
+              <feOffset dx="0" dy="4"/>
+              <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/>
+              <feColorMatrix type="matrix" values="
+                0 0 0 0 1
+                0 0 0 0 1
+                0 0 0 0 1
+                0 0 0 0.24 0
+              "/>
+            </filter>
+            <mask id="service-mask">
+              <rect width="100%" height="100%" fill="white"/>
+              <rect x="220" y="305" width="1000" height="240" fill="white"/>
+              <rect width="100%" height="305" fill="black"/>
+              <rect y="545" width="100%" height="100%" fill="black"/>
+            </mask>
+          </defs>
+          <circle 
+            cx="50%" 
+            cy="50%" 
+            r="424" 
+            fill="url(#service-gradient)"
+            stroke="#FFF"
+            strokeWidth="1"
+            filter="url(#edge-blur)"
+            mask="url(#service-mask)"
+          />
+        </svg>
+      </div>
+      <div className="service-box-secondary">
+        <svg width="100%" height="100%">
+          <defs>
+            <radialGradient id="service-gradient-secondary">
+              <stop offset="0%" stopColor="#E64646" />
+              <stop offset="90%" stopColor="#E64646" />
+              <stop offset="100%" stopColor="#EDBBBB" />
+            </radialGradient>
+            <filter id="edge-blur-secondary" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="0.25"/>
+              <feOffset dx="0" dy="0.1"/>
+              <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/>
+              <feColorMatrix type="matrix" values="
+                0 0 0 0 1
+                0 0 0 0 1
+                0 0 0 0 1
+                0 0 0 0.005 0
+              "/>
+            </filter>
+          </defs>
+          <circle 
+            cx="50%" 
+            cy="50%" 
+            r="210" 
+            fill="url(#service-gradient-secondary)"
+            stroke="rgba(255, 255, 255, 0.08)"
+            strokeWidth="0.25"
+            filter="url(#edge-blur-secondary)"
+            mask="url(#service-mask-2)"
+          />
+        </svg>
+      </div>
+      <img 
+        className="service-box-secondary" 
+        src="/image/Ellipse 19.png" 
+        alt="Service Circle"
+        style={{ display: 'none' }}
+      />
+      <img className="service-image-new" src="/image/Group 334.png" alt="Service" /> 
+      <img className="service-image" src="/image/Group 332.png" alt="Service" /> 
+      <div className="service-svg-container">
         <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="264" viewBox="0 0 1024 264" fill="none">
           <g filter="url(#filter0_d_1566_3175)">
             <path d="M12 8H1012V213H976.5V248H12V8Z" fill="#E64646"/>

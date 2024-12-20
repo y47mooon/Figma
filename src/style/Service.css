@@ -32,7 +32,7 @@
     transform: rotate(-90deg); /* 90度回転 */
     position: absolute; /* 位置を絶対指定 */
     top: 259px; 
-    left: 53px; /* 左辺から53pxの位置 */
+    left: 53px; /* 左辺から53pxの位��� */
     white-space: nowrap;
 }
 
@@ -165,16 +165,48 @@
 }
 
 .service-box {
-    position: absolute; /* 絶対位置を指定 */
-    z-index: 1000; /* service-svg-container より上に表示 */
-    top: 584px; /* 上辺からの位置 */
-    left: 294.92px; /* 左辺からの位置 */
+    position: absolute;
+    z-index: 1000;
+    top: 584px;
+    left: 294.92px;
     width: 849.134px;
     height: 850px;
     flex-shrink: 0;
     border-radius: 850px;
+    border: 1px solid rgba(255, 255, 255, 0);  /* 完全に透明 */
+    background: radial-gradient(50% 50% at 50% 50%, rgba(230, 70, 70, 0) 0%, rgba(230, 70, 70, 0) 90%, rgba(237, 187, 187, 0) 100%);  /* 完全に透明 */
+}
+
+/* service-svg-containerと重なる部分のみ完全に表示 */
+.service-box:where(.service-svg-container) {
     border: 1px solid #FFF;
-    opacity: 0.2;
     background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%);
-    clip-path: inset(0 0 0 0); /* はみ出た部分を隠す */
+}
+
+.service-box-secondary {
+    position: absolute;
+    z-index: 1000;
+    top: 799px;
+    left: 509.7px;
+    width: 419.572px;
+    height: 420px;
+    flex-shrink: 0;
+    border-radius: 420px;
+    border: 0.1px solid rgba(255, 255, 255, 0.005);
+    background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%);
+    filter: drop-shadow(0px 0.25px 0.5px rgba(230, 70, 70, 0.005));
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 89px,
+        rgba(0, 0, 0, 0.2) 90px,
+        rgba(0, 0, 0, 0.2) 330px,
+        transparent 331px
+    );
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 89px,
+        rgba(0, 0, 0, 0.2) 90px,
+        rgba(0, 0, 0, 0.2) 330px,
+        transparent 331px
+    );
 }
