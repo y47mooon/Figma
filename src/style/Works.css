@@ -121,6 +121,6 @@
     left: 20px; /* 指定された位置 */
     width: 1400px; /* 幅 */
     height: 325px; /* 高さ */
-    flex-shrink: 0; /* 縮小しない */
+    flex-shrink: 0; 
     z-index: 200; 
 } 
