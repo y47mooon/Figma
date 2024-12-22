@@ -122,5 +122,5 @@
     width: 1400px; /* 幅 */
     height: 325px; /* 高さ */
     flex-shrink: 0; /* 縮小しない */
-    z-index: 200; /* z-indexを追加 */
+    z-index: 200; 
 } 
