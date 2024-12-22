@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../style/globals.css';
 import '../style/Service.css';
 
 const Service = () => {
+  useEffect(() => {
+    positionServiceIcon();
+    positionServiceIconOffset();
+    positionServiceIconLeft();
+    positionStadiaControllerIcon();
+    positionSyncDesktopIcon();
+    positionMemoryIcon();
+  }, []);
+
   function positionServiceIcon() {
     const serviceIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     serviceIcon.setAttribute("class", "service-icon");
@@ -10,7 +19,6 @@ const Service = () => {
     serviceIcon.setAttribute("height", "279");
     serviceIcon.setAttribute("viewBox", "0 0 155 279");
     serviceIcon.innerHTML = '<path d="M146.211 -1.77354e-05L6.55479 0.507233C3.0253 0.507233 2.41692e-05 2.53613 2.39032e-05 5.5795L2.68254e-07 275.932C2.19518e-09 278.975 6.55477 280.497 8.57162 276.946L154.289 9.13011C156.81 5.07228 152.272 1.33121e-05 146.222 1.27831e-05L146.211 -1.77354e-05Z" fill="#FFA4A4"/>';
-
     document.body.appendChild(serviceIcon);
   }
 
@@ -21,7 +29,6 @@ const Service = () => {
     serviceIconOffset.setAttribute("height", "279");
     serviceIconOffset.setAttribute("viewBox", "0 0 155 279");
     serviceIconOffset.innerHTML = '<path d="M146.211 -1.77354e-05L6.55479 0.507233C3.0253 0.507233 2.41692e-05 2.53613 2.39032e-05 5.5795L2.68254e-07 275.932C2.19518e-09 278.975 6.55477 280.497 8.57162 276.946L154.289 9.13011C156.81 5.07228 152.272 1.33121e-05 146.222 1.27831e-05L146.211 -1.77354e-05Z" fill="#FFA4A4"/>';
-
     document.body.appendChild(serviceIconOffset);
   }
 
@@ -32,7 +39,6 @@ const Service = () => {
     serviceIconLeft.setAttribute("height", "279");
     serviceIconLeft.setAttribute("viewBox", "0 0 155 279");
     serviceIconLeft.innerHTML = '<path d="M146.211 -1.77354e-05L6.55479 0.507233C3.0253 0.507233 2.41692e-05 2.53613 2.39032e-05 5.5795L2.68254e-07 275.932C2.19518e-09 278.975 6.55477 280.497 8.57162 276.946L154.289 9.13011C156.81 5.07228 152.272 1.33121e-05 146.222 1.27831e-05L146.211 -1.77354e-05Z" fill="#FFA4A4"/>';
-
     document.body.appendChild(serviceIconLeft);
   }
 
@@ -48,7 +54,7 @@ const Service = () => {
     return stadiaControllerIcon;
   }
 
-  // メインコンテナにアイコンを追加する関数
+  // メ��ンコンテナにアイコンを追加する関数
   function positionStadiaControllerIcon() {
     const icon = createStadiaControllerIcon();
     document.body.appendChild(icon);
@@ -89,120 +95,21 @@ const Service = () => {
     document.body.appendChild(icon);
   }
 
-  positionServiceIcon();
-  positionServiceIconOffset();
-  positionServiceIconLeft();
-  positionStadiaControllerIcon();
-  positionSyncDesktopIcon();
-  positionMemoryIcon();
-
   return (
     <div className="service-container">
-      <div className="service-box">
-        <svg width="100%" height="100%">
-          <defs>
-            <radialGradient id="service-gradient">
-              <stop offset="0%" stopColor="#E64646" />
-              <stop offset="90%" stopColor="#E64646" />
-              <stop offset="100%" stopColor="#EDBBBB" />
-            </radialGradient>
-            <filter id="edge-blur" x="-30%" y="-30%" width="160%" height="160%">
-              <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
-              <feOffset dx="0" dy="4"/>
-              <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/>
-              <feColorMatrix type="matrix" values="
-                0 0 0 0 1
-                0 0 0 0 1
-                0 0 0 0 1
-                0 0 0 0.24 0
-              "/>
-            </filter>
-            <mask id="service-mask">
-              <rect width="100%" height="100%" fill="white"/>
-              <rect x="220" y="305" width="1000" height="240" fill="white"/>
-              <rect width="100%" height="305" fill="black"/>
-              <rect y="545" width="100%" height="100%" fill="black"/>
-            </mask>
-          </defs>
-          <circle 
-            cx="50%" 
-            cy="50%" 
-            r="424" 
-            fill="url(#service-gradient)"
-            stroke="#FFF"
-            strokeWidth="1"
-            filter="url(#edge-blur)"
-            mask="url(#service-mask)"
-          />
-        </svg>
-      </div>
-      <div className="service-box-secondary">
-        <svg width="100%" height="100%">
-          <defs>
-            <radialGradient id="service-gradient-secondary">
-              <stop offset="0%" stopColor="#E64646" />
-              <stop offset="90%" stopColor="#E64646" />
-              <stop offset="100%" stopColor="#EDBBBB" />
-            </radialGradient>
-            <filter id="edge-blur-secondary" x="-30%" y="-30%" width="160%" height="160%">
-              <feGaussianBlur in="SourceAlpha" stdDeviation="0.25"/>
-              <feOffset dx="0" dy="0.1"/>
-              <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/>
-              <feColorMatrix type="matrix" values="
-                0 0 0 0 1
-                0 0 0 0 1
-                0 0 0 0 1
-                0 0 0 0.005 0
-              "/>
-            </filter>
-          </defs>
-          <circle 
-            cx="50%" 
-            cy="50%" 
-            r="210" 
-            fill="url(#service-gradient-secondary)"
-            stroke="rgba(255, 255, 255, 0.08)"
-            strokeWidth="0.25"
-            filter="url(#edge-blur-secondary)"
-            mask="url(#service-mask-2)"
-          />
-        </svg>
-      </div>
-      <img 
-        className="service-box-secondary" 
-        src="/image/Ellipse 19.png" 
-        alt="Service Circle"
-        style={{ display: 'none' }}
-      />
-      <img className="service-image-new" src="/image/Group 334.png" alt="Service" /> 
-      <img className="service-image" src="/image/Group 332.png" alt="Service" /> 
-      <div className="service-svg-container">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="264" viewBox="0 0 1024 264" fill="none">
-          <g filter="url(#filter0_d_1566_3175)">
-            <path d="M12 8H1012V213H976.5V248H12V8Z" fill="#E64646"/>
-          </g>
-          <defs>
-            <filter id="filter0_d_1566_3175" x="0" y="0" width="1024" height="264" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-              <feOffset dy="4"/>
-              <feGaussianBlur stdDeviation="6"/>
-              <feComposite in2="hardAlpha" operator="out"/>
-              <feColorMatrix type="matrix" values="0 0 0 0 0.901961 0 0 0 0 0.27451 0 0 0 0 0.27451 0 0 0 0.24 0"/>
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1566_3175"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1566_3175" result="shape"/>
-            </filter>
-          </defs>
-        </svg>
-      </div>
       <div className="service-title">
         リアリスAI開発のサービスリスト
-        <div className="service-title-rotated"> What’s is ReAlice?</div>
+        <div className="service-title-rotated">What's is ReAlice?</div>
       </div>
       <div className="service-icon"></div>
       <div className="entertainment-text">エンタメ</div>
       <div className="automation-text">自動化</div>
       <div className="new-icon"></div>
+      <img 
+        className="cv-image" 
+        src="/image/CV.png" 
+        alt="CV" 
+      />
     </div>
   );
 };

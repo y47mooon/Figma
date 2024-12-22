@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import '../style/globals.css';
 import '../style/top.css'
+import '../style/Flow.css';
 import Service from './Service';
+import Flow from './Flow';
+import Works from './Works';
 
 const Top = () => {
   useEffect(() => {
@@ -172,6 +175,7 @@ const Top = () => {
     <div className="top-container">
       <div className="custom-position"></div>
       <Service />
+      <Flow />
       <img 
         src="/image/logo.svg"
         alt="Logo"
@@ -208,6 +212,7 @@ const Top = () => {
         過去実績から培った知見と高度な技術力で、クリエイティブなAI体を実現する開発チーム<br />
         を堤供します。
       </div>
+      <Works />
     </div>
   );
 };

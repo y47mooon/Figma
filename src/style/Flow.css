@@ -1,0 +1,226 @@
+.flow-label {
+    position: absolute;
+    top: 2308px;
+    left: 94px;
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6.4px;
+} 
+
+.realice-flow-text {
+    position: absolute;
+    top: 2308px;
+    left: 52px;
+    color: #1F1F1F;
+    font-family: 'Jura', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.1;
+    transform: rotate(-90deg) translateY(-978%) translateX(+35px);
+    transform-origin: right;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.image-pen {
+    position: absolute;
+    top: 2434px;
+    right: 0;
+    width: 1052px;
+    height: 324px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.image-rectangle {
+    position: absolute;
+    top: 2434px;
+    left: 250px;
+    width: 138px;
+    height: 324px;
+    flex-shrink: 0;
+    background: #5E2121;
+    backdrop-filter: blur(4px);
+    object-fit: cover;
+}
+
+.custom-text {
+    position: absolute;
+    top: 2567px;
+    left: 296px;
+    color: #FFF;
+    font-family: 'Jura', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.custom-svg {
+    position: absolute;
+    top: 2434px;
+    left: 388px;
+    width: 400px;
+    height: 324px;
+    flex-shrink: 0;
+    fill: rgba(230, 70, 70, 0.80);
+    backdrop-filter: blur(4px);
+}
+
+.hearing-text {
+    position: absolute;
+    top: 2510px;
+    left: 429px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+
+.staff-hearing-text {
+    position: absolute;
+    top: 2555px;
+    left: 429px;
+    width: 248px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.image-meeting {
+    position: absolute;
+    top: 2798px; /* 2434px + 324px + 40px */
+    right: 0;
+    width: 1052px;
+    height: 324px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.image-rectangle-135-2 {
+    position: absolute;
+    top: 2798px; /* トップコンテナの最上辺からの位置 */
+    left: 388px; /* 左辺からの位置 */
+    width: 400px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: rgba(230, 70, 70, 0.80); /* 塗りつぶし色 */
+    backdrop-filter: blur(4px); /* 背景ぼかし */
+}
+.image-rectangle-136-2 {
+    position: absolute;
+    top: 2798px; /* メインコンテナの最上辺からの位置 */
+    left:250px; /* 左辺からの位置 */
+    width: 138px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    background: #5E2121; /* 背景色 */
+    backdrop-filter: blur(4px); /* 背景ぼかし */
+}
+
+.image-workplace {
+    position: absolute;
+    top: 3162px; /* 2798px + 324px + 40px */
+    right: 0; /* 左辺の位置 */
+    width: 1052px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    object-fit: cover; /* 画像のフィット */
+}
+
+.image-rectangle-135-3 {
+    position: absolute;
+    top: 3162px; 
+    left: 388px; /* 左辺からの位置 */
+    width: 400px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    object-fit: cover; /* 画像のフィット */
+}
+
+.image-rectangle-136-3 {
+    position: absolute;
+    top: 3162px; /* 指定された位置 */
+    left: 250px; /* 指定された位置 */
+    width: 138px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    background: #5E2121; /* 背景色 */
+    backdrop-filter: blur(4px); /* 背景ぼかし */
+}
+
+.image-adobe-stock {
+    position: absolute;
+    top: 3527px; /* 指定された位置 */
+    right: 0; /* 右辺からの位置 */
+    width: 1052px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    object-fit: cover; /* 画像のフィット */
+}
+
+.image-rectangle-135-4 {
+    position: absolute;
+    top: 3527px; /* 指定された位置 */
+    left: 388px; /* 指定された位置 */
+    width: 400px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    object-fit: cover; /* 画像のフィット */
+}
+
+.image-rectangle-136-4 {
+    position: absolute;
+    top: 3527px; /* 指定された位置 */
+    left: 250px; /* 指定された位置 */
+    width: 138px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    background: #5E2121; /* 背景色 */
+    backdrop-filter: blur(4px); /* 背景ぼかし */
+}
+
+.image-phone {
+    position: absolute;
+    top: 3891px; /* 指定された位置 */
+    right: 0; /* 右辺からの位置 */
+    width: 1052px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    object-fit: cover; /* 画像のフィット */
+}
+
+.image-rectangle-135-5 {
+    position: absolute;
+    top: 3891px; /* 指定された位置 */
+    left: 388px; /* 指定された位置 */
+    width: 400px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    object-fit: cover; /* 画像のフィット */
+}
+
+.image-rectangle-136-5 {
+    position: absolute;
+    top: 3891px; /* 指定された位置 */
+    left: 250px; /* 指定された位置 */
+    width: 138px; /* 幅 */
+    height: 324px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    background: #5E2121; /* 背景色 */
+    backdrop-filter: blur(4px); /* 背景ぼかし */
+}
+
+
+

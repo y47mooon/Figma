@@ -85,7 +85,7 @@
     position: absolute;
     left: 80px;
     top: 119px;
-    z-index: 10;
+    z-index: 600;
     background: url('../../public/image/left.png') lightgray 50% / cover no-repeat;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -100,7 +100,7 @@
     position: absolute;
     top: 119px; 
     left: 255.75px; 
-    z-index: 500;
+    z-index: 650;
     border-top-left-radius: 40px;
     border-top-right-radius: 20px;
     clip-path: path('M30 0 C20 0 0 10 0 53 L364.537 735.731 C376.737 765.76 406.737 765.771 406.737 765.771 L406.736 0 L40 0');
@@ -141,7 +141,7 @@
     font-weight: 400;
     line-height: 32px; /* 200% */
     position: absolute; /* 位置を絶対指定 */
-    top: 828px; /* main-containerの最��辺から828pxの位置 */
+    top: 828px; /* main-containerの最辺から828pxの位置 */
     left: 40px; /* 左辺から40pxの位置 */
     z-index: 800; /* 他の要素の上に表示 */
 }
@@ -196,7 +196,7 @@
 
 .contact-text {
     position: absolute;
-    top: 40px; /* メインコ���テナの最上辺40 */
+    top: 40px; /* メインコンテナの最上辺40 */
     left: 1322px; /* 左辺1322 */
     color: #1F1F1F;
     font-family: "Noto Sans JP";

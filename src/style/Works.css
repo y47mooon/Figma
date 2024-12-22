@@ -1,0 +1,126 @@
+.works-title {
+    position: absolute;
+    top: 4395px; /* 指定された位置 */
+    left: 115px; /* 指定された位置 */
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 32px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 500; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    letter-spacing: 6.4px; /* 文字間隔 */
+}
+
+.image-rectangle-133 {
+    position: absolute;
+    top: 4325px; /* 指定された位置 */
+    left: 0px; /* 指定された位置 */
+    width: 2422px; /* 幅 */
+    height: 1017px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    opacity: 0.2; /* 不透明度 */
+    transform: rotate(-90deg)translateY(-710px)translateX(-700px);
+    background: linear-gradient(238deg, #E64646 0%, rgba(230, 70, 70, 0.00) 46.48%); /* 背景 */
+}
+
+.image-img-2 {
+    position: absolute;
+    top: 4325px; /* 指定された位置 */
+    left: 966px; /* 指定された位置 */
+    width: 450.032px; /* 幅 */
+    height: 931.379px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+}
+
+.examples-title {
+    position: absolute;
+    top: 4395px; /* 指定された位置 */
+    left: 72px; /* 指定された位置 */
+    transform: rotate(-90deg)translateY(-1215%) translateX(+37px); /* 90度回転 */
+    color: #1F1F1F; /* テキストの色 */
+    font-family: Jura; /* フォントファミリー */
+    font-size: 60px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    opacity: 0.1; /* 不透明度 */
+    transform-origin: right;
+}
+
+.image-adobe-stock-734 {
+    position: absolute;
+    top: 4521px; /* 指定された位置 */
+    left: 188px; /* 指定された位置 */
+    width: 407px; /* 幅 */
+    height: 669px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    z-index: 600;
+}
+
+.vector-shape-3 {
+    position: absolute;
+    top: 4613px; /* 指定された位置 */
+    left: 587px; /* 指定された位置 */
+    width: 518px; /* 幅 */
+    height: 230px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    z-index: 400; /* z-indexを追加 */
+}
+
+.vector-shape-3 path {
+    fill: #E64646; /* SVGのパスの色 */
+}
+
+.image-adobe-stock-485 {
+    position: absolute;
+    top: 5270px; /* 指定された位置 */
+    left: 781px; /* 指定された位置 */
+    width: 407px; /* 幅 */
+    height: 671px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    z-index: 500;
+}
+
+.vector-shape-4 {
+    position: absolute;
+    top: 5362px; /* 指定された位置 */
+    left: 188px; /* 指定された位置 */
+    width: 648px; /* 幅 */
+    height: 230px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    z-index: 300; /* z-indexを追加 */
+}
+
+.vector-shape-4 path {
+    fill: #E64646; /* SVGのパスの色 */
+}
+
+.cv-image-2 {
+    position: absolute;
+    top: 5941px; /* 指定された位置 */
+    left: 0; /* 左端に配置 */
+    width: 1440px; /* 幅 */
+    height: 461px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    z-index: 400; /* z-indexを追加 */
+}
+
+.footer-svg {
+    position: absolute;
+    bottom: 20px; /* 指定された位置 */
+    left: 20px; /* 指定された位置 */
+    width: 1400px; /* 幅 */
+    height: 325px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    z-index: 300; /* z-indexを追加 */
+}
+
+.footer-image {
+    position: absolute;
+    top: 6402px; /* 指定された位置 */
+    left: 20px; /* 指定された位置 */
+    width: 1400px; /* 幅 */
+    height: 325px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    z-index: 200; /* z-indexを追加 */
+} 
