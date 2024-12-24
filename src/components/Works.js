@@ -37,7 +37,7 @@ const Works = forwardRef((props, ref) => {
                 map.appendChild(areaElement);
             });
 
-            // 画像にマップを適用
+            // 画像にマップ
             footerImage.useMap = '#footer-nav';
             document.body.appendChild(map);
         }
