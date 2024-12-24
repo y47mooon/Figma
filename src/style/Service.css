@@ -135,3 +135,65 @@
     left: 0; /* 左端に配置 */
     z-index: 800; /* 他の要素の上に表示 */
 }
+
+.dx-text {
+    position: absolute;
+    top: 1299px;
+    left: 371px;
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 950;
+}
+
+.game-dev-text {
+    position: absolute;
+    top: 1373px;
+    left: 897px;
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1500;
+}
+
+.automation-description-text {
+    position: absolute;
+    top: 1373px;
+    left: 644px;
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1500;
+}
+
+.dx-description-text {
+    position: absolute;
+    top: 1373px;
+    left: 371px;
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1500;
+}
+
+/* 追加：service-container内のdx-textのみを表示 */
+.service-container .dx-text {
+    display: block;
+}
+
+/* 追加：service-container外のdx-textを非表示 */
+body > .dx-text {
+    display: none;
+}

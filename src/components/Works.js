@@ -54,13 +54,39 @@ const Works = () => {
                 viewBox="0 0 1400 325" 
                 fill="none"
             >
-                <path d="M0 325H1400V0H0V325Z" fill="white"/>
+                {/*<path d="M0 325H1400V0H0V325Z" fill="white"/>*/}
             </svg>
             <img 
                 src="/image/footer.png" 
                 className="footer-image" 
                 alt="footer" 
             />
+            <div className="step-number-text-01">
+                01
+            </div>
+            <div className="ai-character-conversation-text">
+                AIキャラクターとの会話システムの開発
+            </div>
+            <div className="dena-company-text">
+                DeNA株式会社
+            </div>
+            <div className="ai-capabilities-description-text">
+                AIでできることを現時点の技術で把握し、新規事業に活かしていきたいという要望を小規模の開発でPOCを短サイクルで実現。<br />
+                AI音声と音声+モーションの技術で価値提供を行なった。
+            </div>
+            <div className="step-number-text-02">
+                02
+            </div>
+            <div className="ai-ocr-automation-text">
+                AI OCRシステムを活用した帳票読み取りの自動化
+            </div>
+            <div className="nakamura-logistics-text">
+                ナカムラロジスティクス株式会社
+            </div>
+            <div className="nakamura-logistics-description-text">
+                実際の業務のヒアリングから行い、AIのOCRシステムを活用して伝票の読み取り工数を自動化した。<br />
+                最大8名いた作業員を2名にまで削減
+            </div>
         </div>
     );
 };

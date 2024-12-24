@@ -122,5 +122,109 @@
     width: 1400px; /* 幅 */
     height: 325px; /* 高さ */
     flex-shrink: 0; 
-    z-index: 200; 
-} 
+    z-index: 1000; 
+}
+
+.step-number-text-01 {
+    position: absolute;
+    top: 4521px; /* メインコンテナの最上辺4521px */
+    left: 635px; /* メインコンテナの左辺635px */
+    color: #E64646; /* テキストの色 */
+    font-family: Jura; /* フォントファミリー */
+    font-size: 64px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+}
+
+.ai-character-conversation-text {
+    position: absolute;
+    top: 4674px; /* メインコンテナの最上辺4674px */
+    left: 635px; /* メインコンテナの左辺635px */
+    width: 227px; /* 幅 */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 24px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    z-index: 1300;
+}
+
+.dena-company-text {
+    position: absolute;
+    top: 4760px; /* メインコンテナの最上辺4760px */
+    left: 635px; /* メインコンテナの左辺635px */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 700; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    z-index: 1300;
+}
+
+.ai-capabilities-description-text {
+    position: absolute;
+    top: 4883px; /* メインコンテナの最上辺4883px */
+    left: 635px; /* メインコンテナの左辺635px */
+    width: 553px; /* 幅 */
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: 32px; /* 行の高さ */
+}
+
+.step-number-text-02 {
+    position: absolute;
+    top: 5270px; /* メインコンテナの最上辺5270px */
+    left: 337px; /* メインコンテナの左辺337px */
+    color: #E64646; /* テキストの色 */
+    font-family: Jura; /* フォントファミリー */
+    font-size: 64px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+}
+
+.ai-ocr-automation-text {
+    position: absolute;
+    top: 5423px; /* メインコンテナの最上辺5423px */
+    left: 337px; /* メインコンテナの左辺337px */
+    width: 296px; /* 幅 */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 24px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    z-index: 1300;
+}
+
+.nakamura-logistics-text {
+    position: absolute;
+    top: 5509px; /* メインコンテナの最上辺5509px */
+    left: 337px; /* メインコンテナの左辺337px */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 700; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    z-index: 1300;
+}
+
+.nakamura-logistics-description-text {
+    position: absolute;
+    top: 5632px; /* メインコンテナの最上辺5632px */
+    left: 337px; /* メインコンテナの左辺337px */
+    width: 382px; /* 幅 */
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: 32px; /* 行の高さ */
+}

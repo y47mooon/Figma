@@ -20,9 +20,7 @@ const Top = () => {
     positionInquiryText();
     positionVectorIcon();
     positionVectorIcon2();
-    positionRedSquare();
-    positionWhiteLineIcon();
-    positionReAliceText();
+    positionButtonImage();
   }, []);
 
   function positionTopText() {
@@ -147,32 +145,41 @@ const Top = () => {
     document.body.appendChild(vectorIcon2);
   }
 
-  function positionRedSquare() {
-    const redSquare = document.createElement('div');
-    redSquare.className = 'red-square';
-    document.body.appendChild(redSquare);
-  }
-
-  function positionWhiteLineIcon() {
-    const whiteLineIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    whiteLineIcon.setAttribute("class", "white-line-icon");
-    whiteLineIcon.setAttribute("width", "8");
-    whiteLineIcon.setAttribute("height", "14");
-    whiteLineIcon.setAttribute("viewBox", "0 0 8 14");
-    whiteLineIcon.innerHTML = '<path d="M1 1L7 7L1 13" stroke="white"/>';
-
-    document.body.appendChild(whiteLineIcon);
-  }
-
-  function positionReAliceText() {
-    const realiceText = document.createElement('div');
-    realiceText.className = 'realice-text';
-    realiceText.textContent = '運営会社・ReAliceについて';
-    document.body.appendChild(realiceText);
+  function positionButtonImage() {
+    const buttonImage = document.createElement('img');
+    buttonImage.className = 'btn-image';
+    buttonImage.src = '/image/btn.png';
+    buttonImage.alt = 'ボタン画像';
+    document.body.appendChild(buttonImage);
   }
 
   return (
     <div className="top-container">
+      <div className="left-container">
+        <img 
+          src="/image/left.png" 
+          alt="left" 
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover'
+          }} 
+        />
+      </div>
+      <div className="new-right-container">
+        <img 
+          src="/image/right.png" 
+          alt="right" 
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            clipPath: 'path("M30 0 C20 0 0 10 0 53 L364.537 735.731 C376.737 765.76 406.737 765.771 406.737 765.771 L406.736 0 L40 0")',
+            borderTopLeftRadius: '40px',
+            borderTopRightRadius: '20px'
+          }} 
+        />
+      </div>
       <div className="custom-position"></div>
       <Service />
       <Flow />
@@ -192,18 +199,19 @@ const Top = () => {
           style={{ 
             WebkitTextFillColor: 'transparent',
             backgroundImage: `url('/image/back.png')`,
+            backgroundColor: '#5A1A1A',
+            backgroundBlendMode: 'screen',
             WebkitBackgroundClip: 'text',
-            backgroundClip: 'text'
+            backgroundClip: 'text',
+            textShadow: 'none',
+            border: 'none',
+            outline: 'none'
           }}
         >
           AI Technology<br />
           for Unleashing Creativity
         </div>
       </div>
-      <div className="new-class"></div>
-      <div className="left-container">
-      </div>
-      <div className="new-right-container"></div>
       <div className="creative-ai">
         創造力を引き出すAIテクノロジー
       </div>

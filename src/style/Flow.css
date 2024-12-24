@@ -26,6 +26,7 @@
     transform-origin: right;
     white-space: nowrap;
     width: fit-content;
+    z-index: 1000;
 }
 
 .image-pen {
@@ -36,6 +37,7 @@
     height: 324px;
     flex-shrink: 0;
     object-fit: cover;
+    z-index: 1000;
 }
 
 .image-rectangle {
@@ -48,6 +50,7 @@
     background: #5E2121;
     backdrop-filter: blur(4px);
     object-fit: cover;
+    z-index: 1000;
 }
 
 .custom-text {
@@ -60,6 +63,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    z-index: 1200;
 }
 
 .custom-svg {
@@ -71,6 +75,7 @@
     flex-shrink: 0;
     fill: rgba(230, 70, 70, 0.80);
     backdrop-filter: blur(4px);
+    z-index: 1000;
 }
 
 .hearing-text {
@@ -84,6 +89,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 4px;
+    z-index: 1200;
 }
 
 .staff-hearing-text {
@@ -97,6 +103,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+    z-index: 1200;
 }
 .image-meeting {
     position: absolute;
@@ -139,14 +146,14 @@
     object-fit: cover; /* 画像のフィット */
 }
 
-.image-rectangle-135-3 {
+.image-rectangle-135-6 {
     position: absolute;
     top: 3162px; 
-    left: 388px; /* 左辺からの位置 */
-    width: 400px; /* 幅 */
-    height: 324px; /* 高さ */
-    flex-shrink: 0; /* 縮小しない */
-    object-fit: cover; /* 画像のフィット */
+    left: 388px;
+    width: 400px;
+    height: 324px;
+    flex-shrink: 0;
+    object-fit: cover;
 }
 
 .image-rectangle-136-3 {
@@ -204,7 +211,7 @@
 .image-rectangle-135-5 {
     position: absolute;
     top: 3891px; /* 指定された位置 */
-    left: 388px; /* 指定された位置 */
+    left: 388px; /* 指���された位置 */
     width: 400px; /* 幅 */
     height: 324px; /* 高さ */
     flex-shrink: 0; /* 縮小しない */
@@ -221,6 +228,170 @@
     background: #5E2121; /* 背景色 */
     backdrop-filter: blur(4px); /* 背景ぼかし */
 }
+
+.requirement-definition-text {
+    position: absolute;
+    top: 2890px; /* メインコンテナの最上辺 */
+    left: 429px; /* メインコンテナの左辺 */
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    z-index: 1300; /* 他の要素の上に表示 */
+}
+
+.design-specification-text {
+    position: absolute;
+    top: 2935px; /* 最上辺2935px */
+    left: 429px; /* 左辺429px */
+    width: 248px; /* 幅 */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: 32px; /* 行の高�� */
+    z-index: 1300;
+}
+
+.step-number-text {
+    position: absolute;
+    top: 2931px; /* メインコンテナの最上辺2931px */
+    left: 290px; /* メインコンテナの左辺290px */
+    color: #FFF; /* テキストの色 */
+    font-family: Jura; /* フォントファミリー */
+    font-size: 48px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    z-index:1300;
+}
+
+.step-number-text-03 {
+    position: absolute;
+    top: 3296px; /* メインコンテナの最上辺3296px */
+    left: 290px; /* メインコンテナの左辺290px */
+    color: #FFF; /* テキストの色 */
+    font-family: Jura; /* フォントファミリー */
+    font-size: 48px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    z-index: 1300;
+}
+
+.implementation-text {
+    position: absolute;
+    top: 3255px; /* メインコンテナの最上辺3255px */
+    left: 429px; /* メインコンテナの左辺429px */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 20px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 500; /* フォントウェ���ト */
+    line-height: normal; /* 行の高さ */
+    letter-spacing: 4px; /* 文字間隔 */
+    z-index: 1300;
+}
+
+.implementation-description-text {
+    position: absolute;
+    top: 3297px; /* メインコンテナの最上辺3297px */
+    left: 429px; /* メインコンテナの左辺429px */
+    width: 248px; /* 幅 */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: 32px; /* 行の高さ */
+    z-index: 1300;
+}
+
+.step-number-text-04 {
+    position: absolute;
+    top: 3660px; /* メインコンテナの最上辺3660px */
+    left: 290px; /* メインコンテナの左辺290px */
+    color: #FFF; /* テキストの色 */
+    font-family: Jura; /* フォントファミリー */
+    font-size: 48px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    z-index: 1300;
+}
+
+.testing-and-validation-text {
+    position: absolute;
+    top: 3619px; /* メインコンテナの最上辺3619px */
+    left: 429px; /* メインコンテナの左辺429px */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 20px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 500; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    letter-spacing: 4px; /* 文字間隔 */
+    z-index: 1300;
+}
+
+.test-item-description-text {
+    position: absolute;
+    top: 3664px; /* メインコンテナの最上辺3664px */
+    left: 429px; /* メインコンテナの左辺429px */
+    width: 248px; /* 幅 */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: 32px; /* 行の高さ */
+    z-index: 1300;
+}
+.step-number-text-05 {
+    position: absolute;
+    top: 4024px; /* メインコンテナの最上辺4024px */
+    left: 290px; /* メインコンテナの左辺290px */
+    color: #FFF; /* テキストの色 */
+    font-family: Jura; /* フォントファミリー */
+    font-size: 48px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    z-index: 1300;
+}
+
+.operation-and-expansion-text {
+    position: absolute;
+    top: 3985px; /* メインコンテナの最上辺3985px */
+    left: 429px; /* メインコンテナの左辺429px */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 20px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 500; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    letter-spacing: 4px; /* 文字間隔 */
+    z-index: 1300;
+}
+
+.continuous-operation-description-text {
+    position: absolute;
+    top: 4028px; /* メインコンテナの最上辺4028px */
+    left: 429px; /* メインコンテナの左辺429px */
+    width: 248px; /* 幅 */
+    color: #FFF; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal;
+    font-weight: 400; /* フォントウェイト */
+    line-height: 32px; /* 行の高さ */
+    z-index: 1300;
+}
+
 
 
 

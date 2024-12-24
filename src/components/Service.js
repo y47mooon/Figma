@@ -7,6 +7,10 @@ const Service = () => {
     positionServiceIcon();
     positionServiceIconOffset();
     positionServiceIconLeft();
+    positionDxText();
+    positionGameDevText();
+    positionAutomationDescText();
+    positionDxDescText();
     positionStadiaControllerIcon();
     positionSyncDesktopIcon();
     positionMemoryIcon();
@@ -19,7 +23,15 @@ const Service = () => {
     serviceIcon.setAttribute("height", "279");
     serviceIcon.setAttribute("viewBox", "0 0 155 279");
     serviceIcon.innerHTML = '<path d="M146.211 -1.77354e-05L6.55479 0.507233C3.0253 0.507233 2.41692e-05 2.53613 2.39032e-05 5.5795L2.68254e-07 275.932C2.19518e-09 278.975 6.55477 280.497 8.57162 276.946L154.289 9.13011C156.81 5.07228 152.272 1.33121e-05 146.222 1.27831e-05L146.211 -1.77354e-05Z" fill="#FFA4A4"/>';
-    document.body.appendChild(serviceIcon);
+    
+    serviceIcon.style.top = '234px';  // 1202px - 968px
+    serviceIcon.style.left = '868px';
+    serviceIcon.style.position = 'absolute';
+    
+    const serviceContainer = document.querySelector('.service-container');
+    if (serviceContainer) {
+        serviceContainer.appendChild(serviceIcon);
+    }
   }
 
   function positionServiceIconOffset() {
@@ -29,7 +41,15 @@ const Service = () => {
     serviceIconOffset.setAttribute("height", "279");
     serviceIconOffset.setAttribute("viewBox", "0 0 155 279");
     serviceIconOffset.innerHTML = '<path d="M146.211 -1.77354e-05L6.55479 0.507233C3.0253 0.507233 2.41692e-05 2.53613 2.39032e-05 5.5795L2.68254e-07 275.932C2.19518e-09 278.975 6.55477 280.497 8.57162 276.946L154.289 9.13011C156.81 5.07228 152.272 1.33121e-05 146.222 1.27831e-05L146.211 -1.77354e-05Z" fill="#FFA4A4"/>';
-    document.body.appendChild(serviceIconOffset);
+    
+    serviceIconOffset.style.top = '234px';  // 1202px - 968px
+    serviceIconOffset.style.left = '615px';
+    serviceIconOffset.style.position = 'absolute';
+    
+    const serviceContainer = document.querySelector('.service-container');
+    if (serviceContainer) {
+        serviceContainer.appendChild(serviceIconOffset);
+    }
   }
 
   function positionServiceIconLeft() {
@@ -39,7 +59,15 @@ const Service = () => {
     serviceIconLeft.setAttribute("height", "279");
     serviceIconLeft.setAttribute("viewBox", "0 0 155 279");
     serviceIconLeft.innerHTML = '<path d="M146.211 -1.77354e-05L6.55479 0.507233C3.0253 0.507233 2.41692e-05 2.53613 2.39032e-05 5.5795L2.68254e-07 275.932C2.19518e-09 278.975 6.55477 280.497 8.57162 276.946L154.289 9.13011C156.81 5.07228 152.272 1.33121e-05 146.222 1.27831e-05L146.211 -1.77354e-05Z" fill="#FFA4A4"/>';
-    document.body.appendChild(serviceIconLeft);
+    
+    serviceIconLeft.style.top = '234px';  // 1202px - 968px
+    serviceIconLeft.style.left = '347px';
+    serviceIconLeft.style.position = 'absolute';
+    
+    const serviceContainer = document.querySelector('.service-container');
+    if (serviceContainer) {
+        serviceContainer.appendChild(serviceIconLeft);
+    }
   }
 
   // サービスアイコンを定義する関数
@@ -54,7 +82,7 @@ const Service = () => {
     return stadiaControllerIcon;
   }
 
-  // メ��ンコンテナにアイコンを追加する関数
+  // メインコンテナにアイコンを追加する関数
   function positionStadiaControllerIcon() {
     const icon = createStadiaControllerIcon();
     document.body.appendChild(icon);
@@ -87,14 +115,62 @@ const Service = () => {
     memoryIcon.innerHTML = '<path d="M25.3333 38.6662V25.3329H38.6667V38.6662H25.3333ZM24.6667 54.0509V49.3329H19.4873C18.1402 49.3329 17 48.8662 16.0667 47.9329C15.1333 46.9996 14.6667 45.8594 14.6667 44.5122V39.3329H9.94867V35.3329H14.6667V28.6662H9.94867V24.6662H14.6667V19.4869C14.6667 18.1398 15.1333 16.9996 16.0667 16.0662C17 15.1329 18.1402 14.6662 19.4873 14.6662H24.6667V9.94824H28.6667V14.6662H35.3333V9.94824H39.3333V14.6662H44.5127C45.8598 14.6662 47 15.1329 47.9333 16.0662C48.8667 16.9996 49.3333 18.1398 49.3333 19.4869V24.6662H54.0513V28.6662H49.3333V35.3329H54.0513V39.3329H49.3333V44.5122C49.3333 45.8594 48.8667 46.9996 47.9333 47.9329C47 48.8662 45.8598 49.3329 44.5127 49.3329H39.3333V54.0509H35.3333V49.3329H28.6667V54.0509H24.6667ZM44.5127 45.3329C44.718 45.3329 44.906 45.2474 45.0767 45.0762C45.2478 44.9056 45.3333 44.7176 45.3333 44.5122V19.4869C45.3333 19.2816 45.2478 19.0936 45.0767 18.9229C44.906 18.7518 44.718 18.6662 44.5127 18.6662H19.4873C19.282 18.6662 19.094 18.7518 18.9233 18.9229C18.7522 19.0936 18.6667 19.2816 18.6667 19.4869V44.5122C18.6667 44.7176 18.7522 44.9056 18.9233 45.0762C19.094 45.2474 19.282 45.3329 19.4873 45.3329H44.5127Z" fill="#E64646"/>';
     
     return memoryIcon;
-  }
-
+  } 
   // メインコンテナにアイコンを追加する関数
   function positionMemoryIcon() {
     const icon = createMemoryIcon();
     document.body.appendChild(icon);
   }
 
+  function positionDxText() {
+    // 既存のDXテキストを削除（重複防止）
+    const existingDxTexts = document.querySelectorAll('div');
+    existingDxTexts.forEach(element => {
+        if (element.textContent === 'DX') {
+            element.remove();
+        }
+    });
+
+    const dxText = document.createElement('div');
+    dxText.textContent = 'DX';
+    dxText.style.position = 'absolute';
+    dxText.style.top = '331px';  // 1299px - 968px
+    dxText.style.left = '371px';
+    dxText.style.color = '#1F1F1F';
+    dxText.style.fontFamily = '"Noto Sans JP"';
+    dxText.style.fontSize = '40px';
+    dxText.style.fontStyle = 'normal';
+    dxText.style.fontWeight = '400';
+    dxText.style.lineHeight = 'normal';
+    dxText.style.zIndex = '950';
+    
+    const serviceContainer = document.querySelector('.service-container');
+    if (serviceContainer) {
+        serviceContainer.appendChild(dxText);
+    }
+  }
+
+  function positionGameDevText() {
+    const gameDevText = document.createElement('div');
+    gameDevText.className = 'game-dev-text';
+    gameDevText.innerHTML = 'ReAliceは主にappゲームの<br>開発に関わる技術力を<br>保有しています';
+    document.body.appendChild(gameDevText);
+  }
+
+  function positionAutomationDescText() {
+    const automationDescText = document.createElement('div');
+    automationDescText.className = 'automation-description-text';
+    automationDescText.innerHTML = '作業を自動化し<br>人員削減や最適化を<br>実現';
+    document.body.appendChild(automationDescText);
+  }
+
+  function positionDxDescText() {
+    const dxDescText = document.createElement('div');
+    dxDescText.className = 'dx-description-text';
+    dxDescText.innerHTML = 'AIの力を中心とした<br>企業のDXに寄与します';
+    document.body.appendChild(dxDescText);
+  }
+  
   return (
     <div className="service-container">
       <div className="service-title">
@@ -104,12 +180,10 @@ const Service = () => {
       <div className="service-icon"></div>
       <div className="entertainment-text">エンタメ</div>
       <div className="automation-text">自動化</div>
-      <div className="new-icon"></div>
-      <img 
-        className="cv-image" 
-        src="/image/CV.png" 
-        alt="CV" 
-      />
+      {/*<div className="dx-text">DX</div>*/}
+      <img src="/image/CV.png" className="cv-image" alt="CV" />
+      
+      
     </div>
   );
 };
