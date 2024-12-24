@@ -1,11 +1,11 @@
 import React from 'react';
-import Top from './top';
+import MainComponent from './MainComponent';
 import '../style/globals.css';
 
 export default function Page() {
     return (
         <div>
-            <Top />
+            <MainComponent />
             {/* 他のコンテンツ */}
         </div>
     );

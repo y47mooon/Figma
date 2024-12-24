@@ -290,7 +290,7 @@
 .btn-image {
     position: absolute; /* 位置を絶対指定 */
     width: 224px; /* 幅 */
-    height: 32px; /* 高さ */
+    height: 46px; /* 高さ */
     top: 857px; /* メインコンテナの最上辺からの位置 */
     left: 1176px; /* 左辺からの位置 */
     z-index: 1200; /* 他の要素の上に表示 */

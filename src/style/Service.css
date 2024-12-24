@@ -27,9 +27,10 @@
     font-size: 60px; /* フォントサイズを60pxに変更 */
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 70.98px;
+    letter-spacing: -0.2px;
     opacity: 0.1; /* 不透明度を0.1に変更 */
-    transform: rotate(-90deg)translateY(-953%) translateX(+290px); /* 90度回転 */
+    transform: rotate(-90deg)translateY(-790%) translateX(+290px); /* 90度回転 */
     position: absolute; /* 位置を絶対指定 */
     top: 259px; 
     left: 53px; /* 左辺から53pxの位置 */

@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, forwardRef } from 'react';
 import '../style/globals.css';
 import '../style/Service.css';
 
-const Service = () => {
+const Service = forwardRef((props, ref) => {
+  console.log('Service ref:', ref); // デバッグ用
+
   useEffect(() => {
     positionServiceIcon();
     positionServiceIconOffset();
@@ -14,6 +16,16 @@ const Service = () => {
     positionStadiaControllerIcon();
     positionSyncDesktopIcon();
     positionMemoryIcon();
+  }, []);
+
+  useEffect(() => {
+    const cvImage = document.querySelector('.cv-image');
+    if (cvImage) {
+      cvImage.style.cursor = 'pointer'; // カーソルをポインターに変更
+      cvImage.addEventListener('click', () => {
+        window.location.href = 'https://realice.jp'; // URLに遷移
+      });
+    }
   }, []);
 
   function positionServiceIcon() {
@@ -172,7 +184,7 @@ const Service = () => {
   }
   
   return (
-    <div className="service-container">
+    <div ref={ref} className="service-container">
       <div className="service-title">
         リアリスAI開発のサービスリスト
         <div className="service-title-rotated">What's is ReAlice?</div>
@@ -186,6 +198,6 @@ const Service = () => {
       
     </div>
   );
-};
+});
 
 export default Service; 

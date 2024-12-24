@@ -1,9 +1,60 @@
-import React from 'react';
+import React, { forwardRef, useEffect } from 'react';
 import '../style/Works.css';
 
-const Works = () => {
+const Works = forwardRef((props, ref) => {
+    useEffect(() => {
+        const footerImage = document.querySelector('.footer-image');
+        console.log('Footer image found:', footerImage);
+
+        if (footerImage) {
+            // 画像マップを作成
+            const map = document.createElement('map');
+            map.name = 'footer-nav';
+
+            // エリアを作成
+            const areas = [
+                { coords: '80,162,130,187', href: '#', alt: 'TOP', scroll: 0 },
+                { coords: '162,162,212,187', href: '#', alt: 'Service', scroll: 968 },
+                { coords: '266,162,316,187', href: '#', alt: 'Flow', scroll: 2308 },
+                { coords: '363,162,413,187', href: '#', alt: 'Works', scroll: 3985 }
+            ];
+
+            areas.forEach(area => {
+                const areaElement = document.createElement('area');
+                areaElement.shape = 'rect';
+                areaElement.coords = area.coords;
+                areaElement.href = area.href;
+                areaElement.alt = area.alt;
+                
+                areaElement.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: area.scroll,
+                        behavior: 'smooth'
+                    });
+                });
+                
+                map.appendChild(areaElement);
+            });
+
+            // 画像にマップを適用
+            footerImage.useMap = '#footer-nav';
+            document.body.appendChild(map);
+        }
+    }, []);
+
+    useEffect(() => {
+        const cvImage2 = document.querySelector('.cv-image-2');
+        if (cvImage2) {
+            cvImage2.style.cursor = 'pointer'; // カーソルをポインターに変更
+            cvImage2.addEventListener('click', () => {
+                window.location.href = 'https://realice.jp'; // URLに遷移
+            });
+        }
+    }, []);
+
     return (
-        <div>
+        <div ref={ref}>
             <div className="works-title">
                 開発した事例
             </div>
@@ -89,6 +140,6 @@ const Works = () => {
             </div>
         </div>
     );
-};
+});
 
 export default Works; 

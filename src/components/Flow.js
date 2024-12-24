@@ -5,17 +5,17 @@ const Flow = () => {
     return (
         <>
             <div className="flow-label">
-               お問い合わせから開発のフロー
-           </div>
-           <div className="realice-flow-text">
-               ReAlice development flow.
-           </div>
-           <img src="/image/pen.png" className="image-pen" alt="pen" />
-           <img src="/image/Rectangle 136.png" className="image-rectangle" alt="rectangle" />
-           <div className="custom-text">
-               01
-           </div>
-           <div className="requirement-definition-text">
+                お問い合わせから開発のフロー
+            </div>
+            <div className="realice-flow-text">
+                ReAlice development flow.
+            </div>
+            <img src="/image/pen.png" className="image-pen" alt="pen" />
+            <img src="/image/Rectangle 136.png" className="image-rectangle" alt="rectangle" />
+            <div className="custom-text">
+                01
+            </div>
+            <div className="requirement-definition-text">
                 要件定義・設計
             </div>
             <svg className="custom-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 324" fill="none">
@@ -84,7 +84,6 @@ const Flow = () => {
             <img src="/image/phone-958066_1280 1.png" className="image-phone" alt="Phone" />
             <img src="/image/Rectangle 135-5.png" className="image-rectangle-135-5" alt="Rectangle 135-5" />
             <img src="/image/Rectangle 136.png" className="image-rectangle-136-5" alt="Rectangle 136-5" />
-
         </>
     );
 };
