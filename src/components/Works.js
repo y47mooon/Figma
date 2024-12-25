@@ -5,7 +5,7 @@ const Works = forwardRef((props, ref) => {
     useEffect(() => {
         const footerImage = document.querySelector('.footer-image');
         console.log('Footer image found:', footerImage);
-
+        
         if (footerImage) {
             // 画像マップを作成
             const map = document.createElement('map');
@@ -37,13 +37,51 @@ const Works = forwardRef((props, ref) => {
                 map.appendChild(areaElement);
             });
 
-            // 画像にマップ
+            // 画像にマップを設定
             footerImage.useMap = '#footer-nav';
             document.body.appendChild(map);
         }
+
+        // Realiceリンク用のdiv要素
+        const realiceArea = document.createElement('div');
+        realiceArea.className = 'footer-click-area';
+        realiceArea.onclick = () => {
+            console.log('Footer area clicked!'); // デバッグ用ログ
+            window.location.href = 'https://realice.jp';
+        };
+        console.log('Footer click area created'); // デバッグ用ログ
+        document.body.appendChild(realiceArea);
+
+        // cv-image-2のクリックイベントを追加
+        const cvImage2 = document.querySelector('.cv-image-2');
+        if (cvImage2) {
+            // 画像全体のクリックイベントを無効にする
+            cvImage2.style.pointerEvents = 'none'; // 画像のクリックを無効化
+
+            // クリック可能な範囲を示す透明なdivを作成
+            const clickableArea = document.createElement('div');
+            clickableArea.style.position = 'absolute';
+            clickableArea.style.width = '980px';
+            clickableArea.style.height = '250px';
+            clickableArea.style.top = '6032px'; // メインコンテナからの最上辺
+            clickableArea.style.left = '220px'; // 左辺からの位置
+            clickableArea.style.cursor = 'pointer'; // カーソルをポインターに設定
+            clickableArea.style.zIndex = '1000'; // 他の要素の上に表示
+           
+
+            clickableArea.addEventListener('click', (e) => {
+                e.stopPropagation(); // 他のクリックイベントを防ぐ
+                console.log('CV image clicked!');
+                window.location.href = 'https://realice.jp'; // 遷移先のURLを指定
+            });
+
+            // cv-image-2の親要素に追加
+            cvImage2.parentElement.appendChild(clickableArea);
+        }
+
     }, []);
 
-    useEffect(() => {
+    useEffect(() => {   
         const cvImage2 = document.querySelector('.cv-image-2');
         if (cvImage2) {
             cvImage2.style.cursor = 'pointer'; // カーソルをポインターに変更

@@ -21,10 +21,24 @@ const Service = forwardRef((props, ref) => {
   useEffect(() => {
     const cvImage = document.querySelector('.cv-image');
     if (cvImage) {
-      cvImage.style.cursor = 'pointer'; // カーソルをポインターに変更
-      cvImage.addEventListener('click', () => {
-        window.location.href = 'https://realice.jp'; // URLに遷移
+      cvImage.style.pointerEvents = 'none';
+
+      const clickableArea = document.createElement('div');
+      clickableArea.style.position = 'absolute';
+      clickableArea.style.width = '1000px';
+      clickableArea.style.height = '270px';
+      clickableArea.style.top = '887px';
+      clickableArea.style.left = '220px';
+      clickableArea.style.cursor = 'pointer';
+      clickableArea.style.zIndex = '1000';
+
+      clickableArea.addEventListener('click', (e) => {
+        e.stopPropagation();
+        console.log('CV image clicked!');
+        window.location.href = 'https://realice.jp';
       });
+
+      cvImage.parentElement.appendChild(clickableArea);
     }
   }, []);
 
@@ -97,7 +111,10 @@ const Service = forwardRef((props, ref) => {
   // メインコンテナにアイコンを追加する関数
   function positionStadiaControllerIcon() {
     const icon = createStadiaControllerIcon();
-    document.body.appendChild(icon);
+    const serviceContainer = document.querySelector('.service-container');
+    if (serviceContainer) {
+        serviceContainer.appendChild(icon);
+    }
   }
 
   function createSyncDesktopIcon() {
@@ -131,7 +148,10 @@ const Service = forwardRef((props, ref) => {
   // メインコンテナにアイコンを追加する関数
   function positionMemoryIcon() {
     const icon = createMemoryIcon();
-    document.body.appendChild(icon);
+    const serviceContainer = document.querySelector('.service-container');
+    if (serviceContainer) {
+        serviceContainer.appendChild(icon);
+    }
   }
 
   function positionDxText() {

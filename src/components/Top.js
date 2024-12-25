@@ -262,6 +262,13 @@ const Top = forwardRef((props, ref) => {
     buttonImage.className = 'btn-image';
     buttonImage.src = '/image/btn.png';
     buttonImage.alt = 'ボタン画像';
+    buttonImage.style.cursor = 'pointer';
+
+    buttonImage.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = 'https://realice.jp';
+    });
+
     document.body.appendChild(buttonImage);
   }
 

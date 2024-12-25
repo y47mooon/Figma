@@ -10,6 +10,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 6.4px;
+    flex-shrink: 0;
 } 
 
 .realice-flow-text {
@@ -27,6 +28,7 @@
     transform-origin: right;
     white-space: nowrap;
     width: fit-content;
+    flex-shrink: 0;
     z-index: 1000;
 }
 
@@ -64,6 +66,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    flex-shrink: 0;
     z-index: 1200;
 }
 
@@ -90,6 +93,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 4px;
+    flex-shrink: 0;
     z-index: 1200;
 }
 
@@ -104,6 +108,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+    flex-shrink: 0;
     z-index: 1200;
 }
 .image-meeting {
@@ -241,6 +246,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 4px;
+    flex-shrink: 0;
     z-index: 1300; /* 他の要素の上に表示 */
 }
 
@@ -255,6 +261,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: 32px; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -268,6 +275,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
     z-index:1300;
 }
 
@@ -281,6 +289,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -295,6 +304,7 @@
     font-weight: 500; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
     letter-spacing: 4px; /* 文字間隔 */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -309,6 +319,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: 32px; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -322,6 +333,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -336,6 +348,7 @@
     font-weight: 500; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
     letter-spacing: 4px; /* 文字間隔 */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -350,6 +363,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: 32px; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 .step-number-text-05 {
@@ -362,6 +376,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -376,6 +391,7 @@
     font-weight: 500; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
     letter-spacing: 4px; /* 文字間隔 */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -390,6 +406,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: 32px; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 

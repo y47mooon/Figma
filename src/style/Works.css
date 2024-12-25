@@ -9,6 +9,7 @@
     font-weight: 500; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
     letter-spacing: 6.4px; /* 文字間隔 */
+    flex-shrink: 0;
 }
 
 .image-rectangle-133 {
@@ -45,6 +46,7 @@
     line-height: normal; /* 行の高さ */
     opacity: 0.1; /* 不透明度 */
     transform-origin: right;
+    flex-shrink: 0;
 }
 
 .image-adobe-stock-734 {
@@ -135,6 +137,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
 }
 
 .ai-character-conversation-text {
@@ -148,6 +151,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -161,6 +165,7 @@
     font-style: normal;
     font-weight: 700; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -175,6 +180,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: 32px; /* 行の高さ */
+    flex-shrink: 0;
 }
 
 .step-number-text-02 {
@@ -187,6 +193,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
 }
 
 .ai-ocr-automation-text {
@@ -200,6 +207,7 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -213,6 +221,7 @@
     font-style: normal;
     font-weight: 700; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
     z-index: 1300;
 }
 
@@ -227,4 +236,15 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイト */
     line-height: 32px; /* 行の高さ */
+    flex-shrink: 0;
+}
+
+.footer-click-area {
+    position: absolute;
+    left: 88px; /* 左辺からの位置を88pxに変更 */
+    top: 6672px; 
+    width: 400px; /* 幅（適宜調整） */
+    height: 20px; /* 高さ（適宜調整） */
+    cursor: pointer; /* カーソルをポインターに変更 */
+    z-index: 1000; /* 他の要素の上に表示 */
 }

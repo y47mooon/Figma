@@ -47,6 +47,7 @@
     height: 100%;
     opacity: 0.6;
     object-fit: cover;
+    flex-shrink: 0;
     z-index: 1;
 }
 
@@ -61,6 +62,7 @@
     z-index: 2;
     color: #E64646; /* 文字自体の色 */
     -webkit-text-stroke: 1px #E85959; /* 縁取りの色と太さ */
+    flex-shrink: 0;
     background-size: cover;
     background-position: center;
     -webkit-text-fill-color: transparent;
@@ -117,6 +119,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 4.32px;
+    flex-shrink: 0;
     z-index: 100;
 }
 
@@ -143,6 +146,7 @@
     position: absolute; /* 位置を絶対指定 */
     top: 828px; /* main-containerの最辺から828pxの位置 */
     left: 40px; /* 左辺から40pxの位置 */
+    flex-shrink: 0;
     z-index: 1200; /* 他の要素の上に表示 */
 }
 
@@ -156,6 +160,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .service-text {
@@ -168,6 +174,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .flow-text {
@@ -180,6 +188,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .works-text {
@@ -192,6 +202,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .contact-text {
@@ -204,6 +216,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .top-button-text {
@@ -216,6 +230,8 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイトを400に変更 */
     line-height: normal;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .service-button-text {
@@ -228,6 +244,8 @@
     font-style: normal;
     font-weight: 400; /* フォントウェイトは400 */
     line-height: normal;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .development-flow-text {
@@ -241,6 +259,8 @@
     font-weight: 400; /* フォントウェイトは400 */
     line-height: normal;
     white-space: nowrap; /* テキストを横に表示 */
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 .case-study-text {
     position: absolute;
@@ -253,6 +273,8 @@
     font-weight: 400; /* フォントウェイトは400 */
     line-height: normal;
     white-space: nowrap; /* テキストを横に表示 */
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 .inquiry-text {
     position: absolute;
@@ -265,6 +287,8 @@
     font-weight: 400; /* フォントウェイトは400 */
     line-height: normal;
     white-space: nowrap; /* テキストを横に表示 */
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 .vector-icon {
     position: absolute;
@@ -294,5 +318,6 @@
     top: 857px; /* メインコンテナの最上辺からの位置 */
     left: 1176px; /* 左辺からの位置 */
     z-index: 1200; /* 他の要素の上に表示 */
+    flex-shrink: 0;
 }
 

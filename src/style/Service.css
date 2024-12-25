@@ -20,7 +20,10 @@
     position: absolute; /* 位置を絶対指定 */
     top: 58px; /* サービスコンテナ内の上辺から58pxの位置 */
     left: 80px; /* サービスコンテナ内の左辺から80pxの位置 */
+    flex-shrink: 0;
+    white-space: nowrap;
 } 
+
 .service-title-rotated {
     color: #1F1F1F;
     font-family: "Jura";
@@ -36,6 +39,7 @@
     left: 53px; /* 左辺から53pxの位置 */
     white-space: nowrap;
     transform-origin: right;
+    flex-shrink: 0;
 }
 
 .service-icon {
@@ -72,11 +76,11 @@
 }
 .stadia-controller-icon {
     position: absolute;
-    top: 1226px; /* メインコンテナの最上辺1226 */
-    left: 892px; /* 左辺892 */
-    width: 63px; /* 幅 */
-    height: 63px; /* 高さ */
-    flex-shrink: 0; /* 縮小しない */
+    top: 258px;  /* 1226px - 968px */
+    left: 892px;
+    width: 63px;
+    height: 63px;
+    flex-shrink: 0;
     z-index: 950;
 }
 
@@ -92,7 +96,7 @@
 
 .memory-icon {
     position: absolute;
-    top: 1226px;
+    top: 258px;  /* 1226px - 968px */
     left: 371px;
     width: 64px;
     height: 64px;
@@ -110,6 +114,7 @@
     font-style: normal; /* フォントスタイル */
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    flex-shrink: 0;
     z-index:950;
 }
 
@@ -125,6 +130,7 @@
     line-height: normal;
     z-index: 1000;
     pointer-events: none;
+    flex-shrink: 0;
 }
 
 .cv-image {
@@ -147,6 +153,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    flex-shrink: 0;
     z-index: 950;
 }
 
@@ -160,6 +167,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    flex-shrink: 0;
     z-index: 1500;
 }
 
@@ -173,6 +181,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    flex-shrink: 0;
     z-index: 1500;
 }
 
@@ -186,6 +195,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    flex-shrink: 0;
     z-index: 1500;
 }
 

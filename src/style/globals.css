@@ -22,12 +22,22 @@ body {
   padding: 0;
   overflow-y: auto;
   height: 100vh;
+  width:100%;
+  overflow-x: hidden; /* 横スクロールを無効にする */
+}
+
+@media (max-width: 1440px) {
+  body {
+    transform: scale(0.85);
+    transform-origin: top left;
+  }
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 /*メインコンテナ*/
